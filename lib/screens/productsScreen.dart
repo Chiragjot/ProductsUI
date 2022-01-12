@@ -1,6 +1,6 @@
-import 'package:deep_klarity/fetch_products.dart';
-import 'package:deep_klarity/product_model.dart';
-import 'package:deep_klarity/productsScreenWidget.dart';
+import 'package:deep_klarity/models/fetch_products.dart';
+import 'package:deep_klarity/models/product_model.dart';
+import 'package:deep_klarity/widgets/productsScreenWidget.dart';
 import 'package:flutter/material.dart';
 
 class ProductsScreen extends StatelessWidget {

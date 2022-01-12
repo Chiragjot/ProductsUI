@@ -37,14 +37,14 @@ class ProductsDetailScreen extends StatelessWidget {
           ],
         ),
       ),
-      body: Container(
-        decoration: BoxDecoration(),
+      body: SingleChildScrollView(
         padding: EdgeInsets.all(10),
+        scrollDirection: Axis.vertical,
         child: Column(
           children: [
-            Image.network(productUrl),
+            productUrl == 'None' ? Image.asset('assets/image/cart.jpg') : Image.network(productUrl),
             SizedBox(
-              height: 30,
+              height: 20,
             ),
             Text(
               productDescription,
@@ -54,13 +54,16 @@ class ProductsDetailScreen extends StatelessWidget {
                 fontSize: 20,
               ),
             ),
-            Spacer(),
+            SizedBox(
+              height: 20,
+            ),
             ElevatedButton(
               onPressed: () {},
-              child: Text('Buy Now for '+productPrice.toString(), style: common,),
-              
+              child: Text(
+                'Buy Now for ' + productPrice.toString(),
+                style: common,
+              ),
             ),
-            Spacer(),
           ],
         ),
       ),

@@ -1,5 +1,5 @@
-import 'package:deep_klarity/productsDetailScreen.dart';
-import 'package:deep_klarity/productsScreen.dart';
+import 'package:deep_klarity/screens/productsDetailScreen.dart';
+import 'package:deep_klarity/screens/productsScreen.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 
